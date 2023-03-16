@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack</title>
+    <link rel="stylesheet" href="./../static/css/reset.css">
+    <link rel="stylesheet" href="./../static/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-6 col-md-1 order-1">
+                        <a href="index.html" class="header-logo">
+                            <img src="./../static/img/header-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-10 col-lg-7 order-3 oder-md-2">
+                        <div class="header-nav">
+                            <a href="index.html" id="hero" class="header-nav__elem">Главная</a>
+                            <a href="#" id="about" class="header-nav__elem">О нас</a>
+                            <a href="events.html" id="events" class="header-nav__elem">События</a>
+                            <a href="#" id="news" class="header-nav__elem">Новости</a>
+                            <a href="#" id="rating" class="header-nav__elem">Рейтинг</a>
+                            <a href="education.html" id="education" class="header-nav__elem">Обучение</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-1 offset-lg-1 order-2 order-md-3">
+                        <div class="header-sign">
+                            <a href="signin.html" class="header-sign__btn">Авторизация</a>
+                        </div>
+                        <div class="header-profile">
+                            <div class="header-profile__icon">
+                                <img src="./../static/img/leha.png" alt="man">
+                            </div>
+                            <div class="header-profile__dropmenu profile-dropmenu">
+                                <span class="rectangle"></span>
+                                <div class="profile-dropmenu__info">
+                                    <div class="profile-dropmenu__img">
+                                        <img src="./../static/img/leha.png" alt="чел">
+                                    </div>
+                                    <div class="profile-dropmenu__text">
+                                        <h2>Алексей Олейник</h2>
+                                        <p>часов: <span>120</span></p>
+                                    </div>
+                                </div>
+                                <div class="profile-dropmenu__buttons">
+                                    <a href="settings.html">Настройки</a>
+                                    <a href="#">Выход</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.header-wrapper -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+
+    <section class="forvol">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-4">
+                    <div class="forvol-person">
+                        <div class="forvol-person__img">
+                            <img src="https://bigpicture.ru/wp-content/uploads/2014/06/liars01.jpg" alt="photo">
+                        </div>
+                        <h2 class="forvol-person__name">Алексей Олейник</h2>
+                        <p class="forvol-person__rating">Рейтинг: <span>327</span></p>
+                        <span class="forvol-person__place">Москва, РФ</span><a href="#" class="forvol-person__btn">Редактировать</a></div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="forvol-tabs">
+                        <span data-tab="volEvents" class="forvol-tabs__item forvol-tabs__item_active">События</span>
+                        <span data-tab="volAchievements" class="forvol-tabs__item">Достижения</span>
+                    </div>
+                    <div class="forvol-content">
+                        <div data-tab="volEvents" class="forvol-content__item forvol-content__item_active">
+                            <div class="forvol-events">
+                                <div class="forvol-events__card events-card">
+                                    <div class="events-card__img">
+                                        <img src="./../static/img/volEvent.png" alt="volEvent">
+                                    </div>
+                                    <div class="events-card__info">
+                                        <h2 class="events-card__date">1-3 июня</h2>
+                                        <p class="events-card__role">Роль: <span>Тим-лид</span></p>
+                                        <h3 class="events-card__duty">Обязанности</h3>
+                                        <p class="events-card__desc">Помощь организаторам, организовывать</p>
+                                        <div class="events-card__link">
+                                            <a href="#">Подробнее...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="forvol-events__card events-card">
+                                    <div class="events-card__img">
+                                        <img src="./../static/img/volEvent1.png" alt="volEvent">
+                                    </div>
+                                    <div class="events-card__info">
+                                        <h2 class="events-card__date">6 ч</h2>
+                                        <p class="events-card__role">Роль: <span>Волонтер</span></p>
+                                        <h3 class="events-card__duty">Обязанности</h3>
+                                        <p class="events-card__desc">Доставка продуктов, онлайн общение</p>
+                                        <div class="events-card__link">
+                                            <a href="#">Подробнее...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab="volAchievements" class="forvol-content__item">
+                            <h2>Достижения пока пусты</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.forvol -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <ul class="footer-requisites">
+                            <li><a href="help.html">Помощь</a></li>
+                            <li><a href="documents.html">Документы</a></li>
+                            <li><a href="84997226920" type="tel">8 (499) 722-69-90</a></li>
+                            <li>Москва, Ленинградский пр-т, д. 5,<br> стр.1 ГБУ города Москвы</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="footer-info">
+                            <div class="footer-info__card">
+                                <img src="./../static/img/kos.png" alt="kos">
+                                <p>Комитет общественных связей и молодежной политики Москвы</p>
+                            </div>
+                            <div class="footer-info__card">
+                                <img src="./../static/img/gov.png" alt="gov">
+                                <p>Правительство Москвы</p>
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-links__wrapper">
+                                <a href="https://youtube.com">
+                                    <img src="./../static/img/youtube.svg" alt="youtube">
+                                </a>
+                                <a href="https://web.whatsapp.com">
+                                    <img src="./../static/img/whatsapp.svg" alt="whatsapp">
+                                </a>
+                                <a href="https://web.telegram.org">
+                                    <img src="./../static/img/tg.svg" alt="tg">
+                                </a>
+                                <a href="https://vk.com">
+                                    <img src="./../static/img/vk.svg" alt="vk">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./../static/js/main.js"></script>
+</body>
+</html>

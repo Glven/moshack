@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack</title>
+    <link rel="stylesheet" href="./../static/css/reset.css">
+    <link rel="stylesheet" href="./../static/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./../static/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-6 col-md-1 order-1">
+                        <a href="index.html" class="header-logo">
+                            <img src="./../static/img/header-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-10 col-lg-7 order-3 oder-md-2">
+                        <div class="header-nav">
+                            <a href="index.html" id="hero" class="header-nav__elem">Главная</a>
+                            <a href="#" id="about" class="header-nav__elem">О нас</a>
+                            <a href="events.html" id="events" class="header-nav__elem">События</a>
+                            <a href="#" id="news" class="header-nav__elem">Новости</a>
+                            <a href="#" id="rating" class="header-nav__elem">Рейтинг</a>
+                            <a href="education.html" id="education" class="header-nav__elem">Обучение</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-1 offset-lg-1 order-2 order-md-3">
+                        <div class="header-sign">
+                            <a href="signin.html" class="header-sign__btn">Авторизация</a>
+                        </div>
+                        <div class="header-profile">
+                            <div class="header-profile__icon">
+                                <img src="./../static/img/leha.png" alt="man">
+                            </div>
+                            <div class="header-profile__dropmenu profile-dropmenu">
+                                <span class="rectangle"></span>
+                                <div class="profile-dropmenu__info">
+                                    <div class="profile-dropmenu__img">
+                                        <img src="./../static/img/leha.png" alt="чел">
+                                    </div>
+                                    <div class="profile-dropmenu__text">
+                                        <h2>Алексей Олейник</h2>
+                                        <p>часов: <span>120</span></p>
+                                    </div>
+                                </div>
+                                <div class="profile-dropmenu__buttons">
+                                    <a href="settings.html">Настройки</a>
+                                    <a href="#">Выход</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.header-wrapper -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <section class="profile">
+        <div class="container">
+            <div class="profile-wrapper">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <ul class="profile-sidebar">
+                            <li><a href="#maininfo" class="profile-sidebar__elem profile-sidebar__elem_active">Основная информация</a></li>
+                            <li><a href="#socialnetworks" class="profile-sidebar__elem">Социальные сети</a></li>
+                            <li><a href="#safety" class="profile-sidebar__elem">Безопасность</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <form method="post" id="maininfo" class="profile-form profile-info">
+                            <h2 class="profile-form__title profile-info__title">
+                                Основная информация 
+                                <input type="submit" value="Сохранить">
+                            </h2>
+                            <div class="profile-info__wrapper">
+                                <div class="profile-info__photo">
+                                    <div class="profile-info__img">
+                                        <img src="https://multiwood.ru/wp-content/uploads/2022/01/young-man-2939344_1280.jpg" alt="user">
+                                    </div>
+                                    <label for="profilePhoto" class="profile-form__upload">
+                                        Заменить
+                                    </label>
+                                    <input type="file" id="profilePhoto" class="profile-form__file">
+                                </div>
+                                <div class="profile-info__fill">
+                                    <div class="profile-form__group">
+                                        <label for="company">Название компании</label>
+                                        <input type="text" id="company">
+                                    </div>
+                                    <div class="profile-form__group">
+                                        <label for="description">Описание</label>
+                                        <textarea name="description" id="description" class="textareaForBusiness"></textarea>
+                                    </div>
+                                    <div class="profile-form__group">
+                                        <label for="placement">Расположение</label>
+                                        <input type="text" id="placement">
+                                    </div>
+                                    <div class="profile-form__group">
+                                        <label for="contacts">Контактная информация</label>
+                                        <input type="text" id="contacts">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <form method="post" id="socialnetworks" class="profile-form profile-social">
+                            <h2 class="profile-form__title">
+                                Социальные сети
+                                <input type="submit" value="Сохранить">
+                            </h2> 
+                            <div class="profile-social__group">
+                                <div class="profile-social__item">
+                                    <div class="profile-social__icons">
+                                        <img src="./../static/img/tg.svg" alt="tg">
+                                    </div>
+                                    <h3>Telegram</h3>
+                                </div>
+                                <div class="profile-social__action">
+                                    <a href="#" class="profile-social__bound">Связать</a>
+                                    <div class="profile-social__bounded">
+                                        <p>@OhAmerOn</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-social__group">
+                                <div class="profile-social__item">
+                                    <div class="profile-social__icons">
+                                        <img src="./../static/img/vk.svg" alt="vk">
+                                    </div>
+                                    <h3>VK</h3>
+                                </div>
+                                <div class="profile-social__action">
+                                    <a href="#" class="profile-social__bound">Связать</a>
+                                    <div class="profile-social__bounded">
+                                        <p>@OhAmerOn</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-social__group">
+                                <div class="profile-social__item">
+                                    <div class="profile-social__icons">
+                                        <img src="./../static/img/whatsapp.svg" alt="whatsapp">
+                                    </div>
+                                    <h3>Whatsapp</h3>
+                                </div>
+                                <div class="profile-social__action">
+                                    <a href="#" class="profile-social__bound">Связать</a>
+                                    <div class="profile-social__bounded">
+                                        <p>@OhAmerOn</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-social__group">
+                                <div class="profile-social__item">
+                                    <div class="profile-social__icons">
+                                        <img src="./../static/img/youtube.svg" alt="youtube">
+                                    </div>
+                                    <h3>Youtube</h3>
+                                </div>
+                                <div class="profile-social__action">
+                                    <a href="#" class="profile-social__bound">Связать</a>
+                                    <div class="profile-social__bounded">
+                                        <p>@OhAmerOn</p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="safety" class="profile-form profile-safety">
+                            <h2>Безопасноть</h2>
+                            <form method="post" class="profile-safety__form">
+                                <div class="profile-safety__wrapper">
+                                    <div class="profile-safety__group">
+                                        <label for="mail">Электронная почта</label>
+                                        <input type="email" id="mail" required>
+                                    </div>
+                                </div>
+                                <input type="submit" value="Сохранить">
+                            </form>
+                            <form method="post" class="profile-safety__form profile-safety__password">
+                                <div class="profile-safety__wrapper">
+                                    <div class="profile-safety__group">
+                                        <label for="oldpassword">Старый пароль</label>
+                                        <input type="password" id="oldpassword" required>
+                                    </div>
+                                    <div class="profile-safety__group">
+                                        <label for="password">Новый пароль</label>
+                                        <input type="text" id="password" required>
+                                    </div>
+                                    <div class="profile-safety__group">
+                                        <label for="passwordrepeat">Повторите пароль</label>
+                                        <input type="password" id="passwordrepeat" required>
+                                    </div>
+                                    <span class="profile-safety__wrong">Пароли не совпадают</span>
+                                </div>
+                                <input type="submit" value="Сохранить" class="profile-safety__submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.profile-wrapper -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.profile -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <ul class="footer-requisites">
+                            <li><a href="help.html">Помощь</a></li>
+                            <li><a href="documents.html">Документы</a></li>
+                            <li><a href="84997226920" type="tel">8 (499) 722-69-90</a></li>
+                            <li>Москва, Ленинградский пр-т, д. 5,<br> стр.1 ГБУ города Москвы</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="footer-info">
+                            <div class="footer-info__card">
+                                <img src="./../static/img/kos.png" alt="kos">
+                                <p>Комитет общественных связей и молодежной политики Москвы</p>
+                            </div>
+                            <div class="footer-info__card">
+                                <img src="./../static/img/gov.png" alt="gov">
+                                <p>Правительство Москвы</p>
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-links__wrapper">
+                                <a href="https://youtube.com">
+                                    <img src="./../static/img/youtube.svg" alt="youtube">
+                                </a>
+                                <a href="https://web.whatsapp.com">
+                                    <img src="./../static/img/whatsapp.svg" alt="whatsapp">
+                                </a>
+                                <a href="https://web.telegram.org">
+                                    <img src="./../static/img/tg.svg" alt="tg">
+                                </a>
+                                <a href="https://vk.com">
+                                    <img src="./../static/img/vk.svg" alt="vk">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./../static/js/main.js"></script>
+</body>
+</html>
